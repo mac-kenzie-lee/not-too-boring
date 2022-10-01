@@ -6,6 +6,9 @@ I remember living in Seoul during monsoon season, and would always wonder what w
 
 **Link to project:** https://not-too-boring.mackenziedev.com/
 
+<p align="center">
+<img src="https://github.com/mac-kenzie-lee/not-too-boring/blob/main/nottooboring.gif?raw=true" alt="Not Too Boring website demonstration">
+</p>
 
 ## How It's Made:
 
