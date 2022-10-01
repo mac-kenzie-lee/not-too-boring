@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--added in some meta tags given by bootstrap documentation-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--google font for logo-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!--this next line is the bootstrap link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <link href="styles.css" rel="stylesheet" />
+    <title>Not Too Boring - SEOUL</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav>
+            <ul class="nav nav-pills navitems navbar nav-cus">
+                <li class="navlink nav-item">
+                    <a class="nav-link active nav-cus-text" href="index.html">home </a>
+                </li>
+                <li class="logo nav-cus-text">Not Too Boring</li>
+                <li class="nav-item dropstart">
+                    <a id="dLabel" class="nav-link dropdown-toggle links nav-cus-text" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+            Cities
+          </a>
+                    <ul class="dropdown-menu dd-cus" aria-labelledby="dLabel">
+                        <li class="navlink">
+                            <a class="dropdown-item dd-l" href="oc.html"> Orange County </a>
+                        </li>
+                        <li class="navlink">
+                            <a class="dropdown-item dd-l" href="sf.html"> San Francisco </a>
+                        </li>
+                        <li class="navlink">
+                            <a class="dropdown-item dd-l" href="la.html"> Los Angeles</a>
+                        </li>
+                        <li class="navlink">
+                            <a class="dropdown-item dd-l" href="se.html" aria-current="page">Seoul</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="container-fluid main text-dark">
+            <!--start first hidden text area-->
+            <div class="flexible">
+                <div class="lil-flex">
+                    <h1 class="text-center text-white cities">Seoul</h1>
+                </div>
+                <div class="lil-flex">
+                    <div class="qdiv">What's the weather like?</div>
+                    <div class="bdiv">
+                        <button class="btn btn-primary flex-items new-btncolor qdivexclusion" type="button" data-bs-toggle="collapse" data-bs-target="#SeoulRainy" aria-expanded="false" aria-controls="SeoulRainy">
+              Rainy
+            </button>
+
+                        <button class="btn btn-primary flex-items new-btncolor qdivexclusion" type="button" data-bs-toggle="collapse" data-bs-target="#SeoulSunny" aria-expanded="false" aria-controls="SeoulSunny">
+              Sunny
+            </button>
+
+                        <button class="btn btn-primary flex-items new-btncolor qdivexclusion" type="button" data-bs-toggle="collapse" data-bs-target="#SeoulCold" aria-expanded="false" aria-controls="SeoulCold">
+              Cold
+            </button>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="col">
+                    <div class="collapse multi-collapse" id="SeoulRainy">
+                        <div class="card card-body">
+                            <!--start inner accordian for rainy days-->
+                            <div class="accordion" id="SeoulRainyaccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="SeoulRainyheadingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#SeoulRainycollapseOne" aria-expanded="true" aria-controls="SeoulRainycollapseOne">
+                      Get Underground
+                    </button>
+                                    </h2>
+                                    <div id="SeoulRainycollapseOne" class="accordion-collapse collapse show" aria-labelledby="SeoulRainyheadingOne" data-bs-parent="#SeoulRainyaccordion">
+                                        <div class="accordion-body">
+                                            If the weather isn't too dry, don't get wet--get underground and stop by one of Seoul's underground shopping districts.
+                                            <br>
+                                            <br>
+                                            <ul>
+                                                <li>
+                                                    The biggest is the <a class="links" href="http://naver.me/x2PjYJpC">Bupyeong Shopping
+                            Center</a>.</li>
+                                                <li>
+                                                    Perhaps the most fashionable--<a class="links" href="https://map.naver.com/v5/search/%EA%B0%95%EB%82%A8%EC%97%AD%20%EC%A7%80%ED%95%98%20%EC%87%BC%ED%95%91/place/36519808?c=14140464.4277542,4508649.1815869,17,0,0,0,dh&placePath=%3Fentry%253Dpll">Gangnam
+                            Station's Underground Shopping</a>.</li>
+                                                <li>
+                                                    And of course the most seen by tourists, <a class="links" href="http://naver.me/FFQenhd9">Myeongdeong's shopping area</a></li>
+                                                <li>
+                                                    While not to be overlooked, be sure to check out shopping areas inside Jongno's <a href="http://naver.me/x1eYs5Dw" class="links">Jonggak Station</a>.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="SeoulRainyheadingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#SeoulRainycollapseTwo" aria-expanded="false" aria-controls="SeoulRainycollapseTwo">
+                      See A National Treasure
+                    </button>
+                                    </h2>
+                                    <div id="SeoulRainycollapseTwo" class="accordion-collapse collapse" aria-labelledby="SeoulRainyheadingTwo" data-bs-parent="#SeoulRainyaccordion">
+                                        <div class="accordion-body">
+                                            Explore <strong>Korea's National Museum</strong> in Yongsan right outside Icheon station. The museum is free for all, but special exihibitions have an entry fee.
+                                            <br>The museum is a great place to learn about Korean history and has some nice gardens to check out too if the rain stops.
+                                            <a class="links lil-flex" href="https://www.museum.go.kr/site/eng/home">The National Museum of
+                        Korea</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="SeoulRainyheadingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#SeoulRainycollapseThree" aria-expanded="false" aria-controls="SeoulRainycollapseThree">
+                      A Sombre Mood: Perfect for a Rainy Day
+                    </button>
+                                    </h2>
+                                    <div id="SeoulRainycollapseThree" class="accordion-collapse collapse" aria-labelledby="SeoulRainyheadingThree" data-bs-parent="#SeoulRainyaccordion">
+                                        <div class="accordion-body">
+                                            Go for a tour of the UNESCO site: Jongmyo, a royal shrine. If you score a tour reservation you can learn more about the philosophy surrounding Korean culture and see into the lives of both ancient people and those living today in Korea.
+                                            <a class="lil-flex links" href="https://whc.unesco.org/en/list/738/">UNESCO: More on Jongmyo</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="accord-closer" data-bs-toggle="collapse" data-bs-target="#SeoulRainy" aria-expanded="false" aria-controls="SeoulRainy">Click to close</a>
+                            <!--end inner accordian for rainy days-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="collapse multi-collapse" id="SeoulSunny">
+                        <div class="card card-body">
+                            <!--start sunny accordian inner-->
+                            <div class="accordion" id="SeoulSunnyaccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="SeoulSunnyheadingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#SeoulSunnycollapseOne" aria-expanded="true" aria-controls="SeoulSunnycollapseOne">
+                      Go Higher: Seoul Sky
+                    </button>
+                                    </h2>
+                                    <div id="SeoulSunnycollapseOne" class="accordion-collapse collapse show" aria-labelledby="SeoulSunnyheadingOne" data-bs-parent="#SeoulSunnyaccordion">
+                                        <div class="accordion-body">
+                                            If it's a hot one, why not enjoy the chilly AC at Jamsil tower, more specifically at Seoul Sky. The highest observation deck in Seoul. Take in the sights of the city and enjoy the view.
+                                            <a class="links lil-flex" href="https://seoulsky.lotteworld.com/en/main/index.do">Seoul Sky</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="SeoulSunnyheadingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#SeoulSunnycollapseTwo" aria-expanded="false" aria-controls="SeoulSunnycollapseTwo">
+                      Hang out in Ttukseom!
+                    </button>
+                                    </h2>
+                                    <div id="SeoulSunnycollapseTwo" class="accordion-collapse collapse" aria-labelledby="SeoulSunnyheadingTwo" data-bs-parent="#SeoulSunnyaccordion">
+                                        <div class="accordion-body">
+                                            A great way to beat the heat is to have fun outdoors. Try heading to Ttukseom resort and do some watersports. Or head to Ttukseom Seoul Forest for a bike ride and healing in nature.
+                                            <span class="lil-flex"><a
+                          href="https://english.visitkorea.or.kr/enu/ATR/SI_EN_3_1_1_1.jsp?cid=789696"
+                          class="links flex-items">Seoul Forest</a><a class="links flex-items"
+                          href="https://www.koreatodo.com/ttukseom-hangang-park">Ideas for Ttukseom Resort</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="SeoulSunnyheadingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#SeoulSunnycollapseThree" aria-expanded="false" aria-controls="SeoulSunnycollapseThree">
+                      Cool off at a Rooftop Cafe
+                    </button>
+                                    </h2>
+                                    <div id="SeoulSunnycollapseThree" class="accordion-collapse collapse" aria-labelledby="SeoulSunnyheadingThree" data-bs-parent="#SeoulSunnyaccordion">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li><a class="links" href="http://naver.me/FXZroYzm">Style Nanda Pink Hotels's</a> Rooftop cafe is a great place to take a load off and relax in the summer heat.</li>
+                                                <li>Another great place is <a class="links" href="https://map.naver.com/v5/directions/-/14136443.590010617,4519255.408557771,%ED%98%B8%ED%85%94%EC%84%B8%EB%8A%90%EC%9E%A5,1735045626,PLACE_POI/-/car">Hotel
+                            Seine</a>, a hotel themed multistory cafe with two amazing rooftop levels in trendy Ikseom-dong.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="accord-closer" data-bs-toggle="collapse" data-bs-target="#SeoulSunny" aria-expanded="false" aria-controls="SeoulSunny">Click to close</a>
+
+                            <!--end sunny accordian inner-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="collapse multi-collapse" id="SeoulCold">
+                        <div class="card card-body">
+                            <!--Start cold accordian inner-->
+                            <div class="accordion" id="SeoulColdaccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="SeoulColdheadingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#SeoulColdcollapseOne" aria-expanded="true" aria-controls="SeoulColdcollapseOne">
+                      Seoul Warming Samgyetang
+                    </button>
+                                    </h2>
+                                    <div id="SeoulColdcollapseOne" class="accordion-collapse collapse show" aria-labelledby="SeoulColdheadingOne" data-bs-parent="#SeoulColdaccordion">
+                                        <div class="accordion-body">
+                                            Stave off the cold and warm up from the inside out with some delicious samgyetang. Ilpumdaega Samgyetang is a personal favorite. They have great options for side dishes, and provide special ginseng wine with your order! <br>                                            <strong>Pro-tip:</strong> try the hanyak samgyetang!
+                                            <a class="lil-flex links" href="http://naver.me/xZDOmy3f">Samgyetang in Guui</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="SeoulColdheadingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#SeoulColdcollapseTwo" aria-expanded="false" aria-controls="SeoulColdcollapseTwo">
+                      Warm up With a Spa
+                    </button>
+                                    </h2>
+                                    <div id="SeoulColdcollapseTwo" class="accordion-collapse collapse" aria-labelledby="SeoulColdheadingTwo" data-bs-parent="#SeoulColdaccordion">
+                                        <div class="accordion-body">
+                                            Korean culture has so many different facets to it, one often overlooked feature is their traditional bathhouses and saunas known as jjimjilbangs. If you're feeling cold it's a great place to warm up and relax. One jjimjilbang popular with tourists is
+                                            Siloam Sauna near Seoul Station. They have many amenities and it's a great first stop for experiencing Korean bathhouse culture.
+                                            <a class="lil-flex links" href="http://www.silloamsauna.com/">Siloam Sauna</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="SeoulColdheadingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#SeoulColdcollapseThree" aria-expanded="false" aria-controls="SeoulColdcollapseThree">
+                      Cold Day = Warm Street Food
+                    </button>
+                                    </h2>
+                                    <div id="SeoulColdcollapseThree" class="accordion-collapse collapse" aria-labelledby="SeoulColdheadingThree" data-bs-parent="#SeoulColdaccordion">
+                                        <div class="accordion-body">
+                                            Nothing beats being out in the cold like eating warm roasted chestnuts, or savory chicken skewers. Seoul has many street food vendors roaming about here and there, and enjoying a snack on the go can be such a great experience.
+                                            <br> But, knowing where to find street food can be tricky.
+                                            <br> Here are some great areas where I've found street food in the past.
+                                            <br>
+                                            <br>
+                                            <ul>
+                                                <li>
+                                                    Jongno: On the streets between Jongno-3ga Station and Jongno-5ga station, walking north. <a class="links" href="http://naver.me/x6P7d6uE">Possible map starting point.</a>
+                                                </li>
+                                                <li>Insadong: On the streets. <a class="links" href="http://naver.me/FzHvLvbe">Map walking
+                            area.</a></li>
+                                                <li>Myeongdong: Mostly at night and more on the weekends. <a class="links" href="http://naver.me/FJHDUpRQ">General Map Area</a></li>
+                                                <li>Food Market: <a class="links" href="http://naver.me/xFprKyPp">Gwangjang Food Market</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="accord-closer" data-bs-toggle="collapse" data-bs-target="#SeoulCold" aria-expanded="false" aria-controls="SeoulCold">Click to close</a>
+                            <!--end cold accordian inner-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end first hidden text area-->
+        </div>
+    </div>
+    <footer class="container-fluid colorbg fixed-bottom">
+        <nav>
+            <ul class="footflex">
+                <li class="footflexitem">
+                    <a href="#" class="smlink links" id="alertFooter">About</a>
+                </li>
+                <li class="footflexitem">&#169; 2022</li>
+                <li class="footflexitem"><a href="https://github.com/mac-kenzie-lee">Github: mac-kenzie-lee</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <!--the following line is the script for bootstrap's js and popper-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <!--below script element links in my custom javascript!-->
+    <script src="customJs.js">
+    </script>
+</body>
+
+</html>

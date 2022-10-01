@@ -1,0 +1,280 @@
+/*bootstrap code for resizing module just in case
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+*/
+
+.container-fluid {
+    padding: 0;
+}
+.main
+{
+   padding: 2rem;
+}
+
+.navitems {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.logo {
+    color: white;
+    font-family: 'Caveat', cursive;
+
+
+}
+.navbar {
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.links:hover {
+    color: #29648a;
+}
+
+.links:active {
+    color: #464866;
+}
+
+.links:focus {
+    color: #AAABB8;
+}
+
+
+.main {
+    width: 80%;
+}
+
+.footflex {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    list-style-type: none;
+    color: #464866;
+    padding: 0;
+    margin: 0;
+}
+
+.colorbg {
+    margin-top: 1rem;
+
+
+}
+
+.footflexitem {
+    padding: .3rem;
+
+}
+
+.nav-cus-text {
+    color:#2e9cca;
+}
+
+
+.logo {
+    font-size:  1.4rem;
+    font-weight: 600;
+    color: #fff;
+}
+ body {
+    background-color: #25274D;
+    color: white;
+}
+
+
+/*for pill box styling*/
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: white;
+    background-color: #2e9cca;
+}
+
+.nav-link:hover {
+    background-color: #464866;
+}
+
+.dd-cus {
+    background-color: #2e9cca;
+    color: #29648a;
+}
+
+.dd-l {
+    color: #25274d;
+}
+.dd-l:hover, .dd-l:active, .dd-l:focus {
+    background-color: #29648a;
+}
+
+.smlink {
+    text-decoration: none;
+    color: #464866;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-dark {
+    color: black;
+}
+
+.text-white {
+    color: white;
+}
+.flexible {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.lil-flex {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.lil-flex-col {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.flex-items {
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin: .5rem;
+
+}
+.accord-closer {
+    text-decoration: none;
+    color: red;
+    padding-top: 1rem;
+    text-align: center;
+
+}
+.acc-a {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.accordion-button:not(.collapsed) {
+    color: white;
+    background-color: #2e9cca;
+}
+
+.accordion-button:focus
+{
+    border-color: red;
+    box-shadow: 0 0 0 0.25rem rgb(46, 156, 202 / 25%);
+}
+
+.new-btncolor {
+    background-color: #2e9cca   ;
+    border-color: #2e9cca;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 0;
+    flex-wrap: none;
+}
+
+.new-btncolor:active {
+    background-color: white;
+    border-color: #2e9cca;
+    box-shadow: 0 0 0 0.25rem rgb(255, 255, 255 / 65%);
+}
+
+.new-btncolor:hover {
+    background-color: #39abdb   ;
+    border-color: #39abdb;
+}
+
+.new-btncolor:focus, .primary:focus {
+    background-color: #2e9cca   ;
+    border-color: #2e9cca;
+    box-shadow: 0 0 0 0.25rem rgb(255, 255, 255 / 65%);
+}
+
+.new-btncolor:active:focus {
+    box-shadow: 0 0 0 0.25rem rgb(255, 255, 255/ 80%);
+}
+
+.card-body {
+   margin-top: 2.5rem;
+}
+
+
+.qdiv {
+    align-self: center;
+    color: #AAABB8;
+}
+
+.cities {
+    font-family: 'Caveat', cursive;
+    font-size: 4rem;
+    color: #2e9cca;
+}
+
+.nav-cus > li > a {
+    color: white;
+    text-decoration: none;
+}
+.nav-cus > li:hover > a:hover, .nav-cus > li > a:focus-within   {
+    background-color: #464866;
+    color: white;
+}
+
+.herotext {
+    font-family: 'DM Serif Display', serif;
+    font-size: 3.3rem;
+    color: #a7ccdc;
+}
+
+.text-links-flex
+{
+    display: flex;
+    justify-content: center;
+}
+
+.linkspace {
+padding-right: 1rem;
+}
+
+.center-text {
+    text-align: center;
+}
+/*mobile devices from here on down-------------------*/
+@media screen and (max-width: 785px) {
+
+
+.main {
+    width: 95%;
+    margin:0;
+    padding: 1rem;
+}
+.flexible {
+    flex-direction: row;
+}
+.lil-flex {
+flex-wrap: wrap;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+}
+.qdiv {
+    align-self: center;
+    flex-shrink: 0;
+    flex-basis: 100%
+    text-align: center;
+}
+.qdivexclusion {
+
+    align-self: center;
+}
+
+.bdiv {
+    display: flex;
+    flex-wrap: nowrap;
+}
+}

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--added in some meta tags given by bootstrap documentation-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--google font for logo-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!--this next line is the bootstrap link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <link href="styles.css" rel="stylesheet" />
+    <title>Not Too Boring - San Francisco</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav>
+            <ul class="nav nav-pills navitems navbar nav-cus">
+                <li class="navlink nav-item">
+                    <a class="nav-link active nav-cus-text" href="index.html">home </a>
+                </li>
+                <li class="logo nav-cus-text">Not Too Boring</li>
+                <li class="nav-item dropstart">
+                    <a id="dLabel" class="nav-link dropdown-toggle links nav-cus-text" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+            Cities
+          </a>
+                    <ul class="dropdown-menu dd-cus" aria-labelledby="dLabel">
+                        <li class="navlink">
+                            <a class="dropdown-item dd-l" href="oc.html"> Orange County </a>
+                        </li>
+                        <li class="navlink">
+                            <a class="dropdown-item dd-l" href="sf.html"> San Francisco </a>
+                        </li>
+                        <li class="navlink">
+                            <a class="dropdown-item dd-l" href="la.html"> Los Angeles</a>
+                        </li>
+                        <li class="navlink">
+                            <a class="dropdown-item dd-l" href="se.html" aria-current="page">Seoul</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="container-fluid main text-dark">
+            <!--start first hidden text area-->
+            <div class="flexible">
+                <div class="lil-flex">
+                    <h1 class="text-center text-white cities">San Francisco</h1>
+                </div>
+                <div class="lil-flex">
+                    <div class="qdiv">What's the weather like?</div>
+                    <div class="bdiv">
+                        <button class="btn btn-primary flex-items new-btncolor qdivexclusion" type="button" data-bs-toggle="collapse" data-bs-target="#SanFranciscoRainy" aria-expanded="false" aria-controls="SanFranciscoRainy">
+              Rainy
+            </button>
+
+                        <button class="btn btn-primary flex-items new-btncolor qdivexclusion" type="button" data-bs-toggle="collapse" data-bs-target="#SanFranciscoSunny" aria-expanded="false" aria-controls="SanFranciscoSunny">
+              Sunny
+            </button>
+
+                        <button class="btn btn-primary flex-items new-btncolor qdivexclusion" type="button" data-bs-toggle="collapse" data-bs-target="#SanFranciscoCold" aria-expanded="false" aria-controls="SanFranciscoCold">
+              Cold
+            </button>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="col">
+                    <div class="collapse multi-collapse" id="SanFranciscoRainy">
+                        <div class="card card-body">
+                            <!--start inner accordian for rainy days-->
+                            <div class="accordion" id="SanFranciscoRainyaccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="SanFranciscoRainyheadingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#SanFranciscoRainycollapseOne" aria-expanded="true" aria-controls="SanFranciscoRainycollapseOne">
+                      Get Cultured: Museum Check
+                    </button>
+                                    </h2>
+                                    <div id="SanFranciscoRainycollapseOne" class="accordion-collapse collapse show" aria-labelledby="SanFranciscoRainyheadingOne" data-bs-parent="#SanFranciscoRainyaccordion">
+                                        <div class="accordion-body">
+                                            San Francisco has a great number of museums to check out. Visting a museum is great for a rainy day. For classical fine arts stop by the <a href="https://deyoung.famsf.org/" class="links">De Young
+                        Museum</a>
+                                            <br> Check out some Asian art, and see what's going on at the <a class="links" href="https://asianart.org/">Asian Art Museum</a>
+                                            <br> See modern art at the <a href="https://www.sfmoma.org/" class="links">SFMOMA</a>
+                                            <br> If history is more your scene and you don't mind a daytrip, take the bart to Berkeley and check out the cool ancient artifacts at one of <a href="https://museums.berkeley.edu/" class="links">the
+                        Museums at Berkeley</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="SanFranciscoRainyheadingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#SanFranciscoRainycollapseTwo" aria-expanded="false" aria-controls="SanFranciscoRainycollapseTwo">
+                      High Tea and Cake
+                    </button>
+                                    </h2>
+                                    <div id="SanFranciscoRainycollapseTwo" class="accordion-collapse collapse" aria-labelledby="SanFranciscoRainyheadingTwo" data-bs-parent="#SanFranciscoRainyaccordion">
+                                        <div class="accordion-body">
+                                            If the weather isn't too good, cheer yourself up with some delicious sweets.
+                                            <p>Enjoy the view from <a href="https://locations.thecheesecakefactory.com/ca/san-francisco/" class="links">Cheesecake Factory at Union Square</a> or indulge in a course of high tea at the
+                                                <a class="links" href="https://www.marriott.com/en-us/hotels/sfolc-palace-hotel-a-luxury-collection-hotel-san-francisco/dining/">Garden
+                          Court</a> inside the Palace Hotel.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="SanFranciscoRainyheadingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#SanFranciscoRainycollapseThree" aria-expanded="false" aria-controls="SanFranciscoRainycollapseThree">
+                      Do Some Shopping
+                    </button>
+                                    </h2>
+                                    <div id="SanFranciscoRainycollapseThree" class="accordion-collapse collapse" aria-labelledby="SanFranciscoRainyheadingThree" data-bs-parent="#SanFranciscoRainyaccordion">
+                                        <div class="accordion-body">
+                                            Check out cool Asian inspired fashions at New People World in Japantown, or stop by the indoor shopping mall with access from the Powell Station SFMuni Metro/BART stop.<span class="lil-flex">
+                        <a class="links flex-items" href="https://www.newpeopleworld.com/">New People World</a>
+                        <a class="links flex-items" href="https://www.westfield.com/sanfrancisco">Westfield San
+                          Francisco</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="accord-closer" data-bs-toggle="collapse" data-bs-target="#SanFranciscoRainy" aria-expanded="false" aria-controls="SanFranciscoRainy">Click to close</a>
+                            <!--end inner accordian for rainy days-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="collapse multi-collapse" id="SanFranciscoSunny">
+                        <div class="card card-body">
+                            <!--start sunny accordian inner-->
+                            <div class="accordion" id="SanFranciscoSunnyaccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="SanFranciscoSunnyheadingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#SanFranciscoSunnycollapseOne" aria-expanded="true" aria-controls="SanFranciscoSunnycollapseOne">
+                      Scenic Ride to Beat the Heat
+                    </button>
+                                    </h2>
+                                    <div id="SanFranciscoSunnycollapseOne" class="accordion-collapse collapse show" aria-labelledby="SanFranciscoSunnyheadingOne" data-bs-parent="#SanFranciscoSunnyaccordion">
+                                        <div class="accordion-body">
+                                            Try biking across the Golden Gate Bridge. While you're on the otherside be sure to check out the town of Marin, and maybe take a ferry back to San Francisco from Marin.
+                                            <span class="lil-flex">
+                        <a class="flex-items links"
+                          href="https://www.goldengate.org/bridge/visiting-the-bridge/bikes-pedestrians/">Guide to
+                          Biking Golden Gate</a>
+                        <a class="flex-items links" href="https://www.visitmarin.org/things-to-do/">Marin Tourism</a>
+                      </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="SanFranciscoSunnyheadingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#SanFranciscoSunnycollapseTwo" aria-expanded="false" aria-controls="SanFranciscoSunnycollapseTwo">
+                      Head for the Open Sea!
+                    </button>
+                                    </h2>
+                                    <div id="SanFranciscoSunnycollapseTwo" class="accordion-collapse collapse" aria-labelledby="SanFranciscoSunnyheadingTwo" data-bs-parent="#SanFranciscoSunnyaccordion">
+                                        <div class="accordion-body">
+                                            <div>Fill the day with some maritime fun and cool off by the waves. You could check out the old ruins of Victorian Era Sutro Baths. Or even check out the San Francisco Maritime National Historical Park in Fisherman's
+                                                Wharf. If you really want to hit the waves, take a boat tour around the bay and under the Golden Gate Bridge.
+                                                <span class="lil-flex-col">
+                          <a class="links flex-items"
+                            href="https://www.sftravel.com/article/everything-you-need-know-about-san-franciscos-historic-sutro-baths">More
+                            Info on Sutro</a>
+                          <a class="links flex-items center-text" href="https://www.nps.gov/safr/index.htm">San Francisco Maritime National
+                            Historical Park</a>
+                          <a class="links flex-items"
+                            href="https://www.sftravel.com/article/find-perfect-boat-tour-san-francisco">Find a tour
+                            here</a>
+                        </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="SanFranciscoSunnyheadingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#SanFranciscoSunnycollapseThree" aria-expanded="false" aria-controls="SanFranciscoSunnycollapseThree">
+                      Ride the Cable Cars and Grab Gelato in Little Italy
+                    </button>
+                                    </h2>
+                                    <div id="SanFranciscoSunnycollapseThree" class="accordion-collapse collapse" aria-labelledby="SanFranciscoSunnyheadingThree" data-bs-parent="#SanFranciscoSunnyaccordion">
+                                        <div class="accordion-body">
+                                            Don't fight the heat! Ride the wind, or the historical San Francisco cable cars. Take the cars down near Little Italy and grab a nice sweet treat.
+                                            <span class="lil-flex">
+                        <a class="links flex-items"
+                          href="https://www.tripadvisor.com/Restaurants-g60713-zfd20533-zfn15621991-San_Francisco_California-Gelato.html">Trip
+                          Advisor on Gelato</a>
+                        <a class="links flex-items" href="https://www.sfmta.com/getting-around/muni/cable-cars">Riding
+                          the Cable Cars</a>
+                      </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="accord-closer" data-bs-toggle="collapse" data-bs-target="#SanFranciscoSunny" aria-expanded="false" aria-controls="SanFranciscoSunny">Click to close</a>
+
+                            <!--end sunny accordian inner-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="collapse multi-collapse" id="SanFranciscoCold">
+                        <div class="card card-body">
+                            <!--Start cold accordian inner-->
+                            <div class="accordion" id="SanFranciscoColdaccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="SanFranciscoColdheadingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#SanFranciscoColdcollapseOne" aria-expanded="true" aria-controls="SanFranciscoColdcollapseOne">
+                      Cold? Warm up with a Delicious Dosa
+                    </button>
+                                    </h2>
+                                    <div id="SanFranciscoColdcollapseOne" class="accordion-collapse collapse show" aria-labelledby="SanFranciscoColdheadingOne" data-bs-parent="#SanFranciscoColdaccordion">
+                                        <div class="accordion-body">
+                                            For some deliciousness stop by Udupi Palace in The Mission for a oversized paper masala dosa.
+                                            <a class="lil-flex links" href="https://udupipalacesanfranciscoca.com/17208">Udupi Palace</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="SanFranciscoColdheadingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#SanFranciscoColdcollapseTwo" aria-expanded="false" aria-controls="SanFranciscoColdcollapseTwo">
+                      Have a Coffee
+                    </button>
+                                    </h2>
+                                    <div id="SanFranciscoColdcollapseTwo" class="accordion-collapse collapse" aria-labelledby="SanFranciscoColdheadingTwo" data-bs-parent="#SanFranciscoColdaccordion">
+                                        <div class="accordion-body">
+                                            Stop by Four Barrel for some original tasty coffee house sips, sure to warm you up. It's a great place to make conversation and socialize with friends.
+                                            <a class="links lil-flex" href="https://www.fourbarrelcoffee.com/">Four Barrel</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="SanFranciscoColdheadingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#SanFranciscoColdcollapseThree" aria-expanded="false" aria-controls="SanFranciscoColdcollapseThree">
+                      Walk around Chinatown
+                    </button>
+                                    </h2>
+                                    <div id="SanFranciscoColdcollapseThree" class="accordion-collapse collapse" aria-labelledby="SanFranciscoColdheadingThree" data-bs-parent="#SanFranciscoColdaccordion">
+                                        <div class="accordion-body">
+                                            Warm up by going for a walk in Chinatown, maybe grab some famous dim sum, indulge in freshly baked buns and bakery items from one of Chinatown's pastry shops.
+                                            <a class="links lil-flex" href="https://www.yelp.com/search?find_desc=chinatown+bakery&find_loc=San+Francisco%2C+CA">Take
+                        Yelp's Advice: Top Bakeries</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="accord-closer" data-bs-toggle="collapse" data-bs-target="#SanFranciscoCold" aria-expanded="false" aria-controls="SanFranciscoCold">Click to close</a>
+                            <!--end cold accordian inner-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end first hidden text area-->
+        </div>
+    </div>
+    <footer class="container-fluid colorbg fixed-bottom">
+        <nav>
+            <ul class="footflex">
+                <li class="footflexitem">
+                    <a href="#" class="smlink links" id="alertFooter">About</a>
+                </li>
+                <li class="footflexitem">&#169; 2022</li>
+                <li class="footflexitem"><a href="https://github.com/mac-kenzie-lee">Github: mac-kenzie-lee</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <!--the following line is the script for bootstrap's js and popper-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <!--below script element links in my custom javascript!-->
+    <script src="customJs.js">
+    </script>
+</body>
+
+</html>

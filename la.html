@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--added in some meta tags given by bootstrap documentation-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--google font for logo-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!--this next line is the bootstrap link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <link href="styles.css" rel="stylesheet" />
+    <title>Not Too Boring - Los Angeles</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav>
+            <ul class="nav nav-pills navitems navbar nav-cus">
+                <li class="navlink nav-item">
+                    <a class="nav-link active nav-cus-text" href="index.html">home </a>
+                </li>
+                <li class="logo nav-cus-text">Not Too Boring</li>
+                <li class="nav-item dropstart">
+                    <a id="dLabel" class="nav-link dropdown-toggle links nav-cus-text" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+            Cities
+          </a>
+                    <ul class="dropdown-menu dd-cus" aria-labelledby="dLabel">
+                        <li class="navlink">
+                            <a class="dropdown-item dd-l" href="oc.html"> Orange County </a>
+                        </li>
+                        <li class="navlink">
+                            <a class="dropdown-item dd-l" href="sf.html"> San Francisco </a>
+                        </li>
+                        <li class="navlink">
+                            <a class="dropdown-item dd-l" href="la.html"> Los Angeles</a>
+                        </li>
+                        <li class="navlink">
+                            <a class="dropdown-item dd-l" href="se.html" aria-current="page">Seoul</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="container-fluid main text-dark">
+            <!--start first hidden text area-->
+            <div class="flexible">
+                <div class="lil-flex">
+                    <h1 class="text-center text-white cities">Los Angeles</h1>
+                </div>
+                <div class="lil-flex">
+                    <div class="qdiv">What's the weather like?</div>
+                    <div class="bdiv">
+                        <button class="btn btn-primary flex-items new-btncolor qdivexclusion" type="button" data-bs-toggle="collapse" data-bs-target="#LosAngelesRainy" aria-expanded="false" aria-controls="LosAngelesRainy">
+              Rainy
+            </button>
+
+                        <button class="btn btn-primary flex-items new-btncolor qdivexclusion" type="button" data-bs-toggle="collapse" data-bs-target="#LosAngelesSunny" aria-expanded="false" aria-controls="LosAngelesSunny">
+              Sunny
+            </button>
+
+                        <button class="btn btn-primary flex-items new-btncolor qdivexclusion" type="button" data-bs-toggle="collapse" data-bs-target="#LosAngelesCold" aria-expanded="false" aria-controls="LosAngelesCold">
+              Cold
+            </button>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="col">
+                    <div class="collapse multi-collapse" id="LosAngelesRainy">
+                        <div class="card card-body">
+                            <!--start inner accordian for rainy days-->
+                            <div class="accordion" id="LosAngelesRainyaccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="LosAngelesRainyheadingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#LosAngelesRainycollapseOne" aria-expanded="true" aria-controls="LosAngelesRainycollapseOne">
+                      Beat the Rain by Checking Out Art
+                    </button>
+                                    </h2>
+                                    <div id="LosAngelesRainycollapseOne" class="accordion-collapse collapse show" aria-labelledby="LosAngelesRainyheadingOne" data-bs-parent="#LosAngelesRainyaccordion">
+                                        <div class="accordion-body">
+                                            For modern and contemporary masterpieces, see what's going on at <strong>the Broad</strong>. The Broad boasts an infinity room and rotating special exhibitions. Be sure to reserve tickets in advance to beat
+                                            the lines.<br>
+                                            <a class="links lil-flex" href="https://www.thebroad.org/">The Broad</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="LosAngelesRainyheadingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#LosAngelesRainycollapseTwo" aria-expanded="false" aria-controls="LosAngelesRainycollapseTwo">
+                      Old Time Hollywood Movie Magic
+                    </button>
+                                    </h2>
+                                    <div id="LosAngelesRainycollapseTwo" class="accordion-collapse collapse" aria-labelledby="LosAngelesRainyheadingTwo" data-bs-parent="#LosAngelesRainyaccordion">
+                                        <div class="accordion-body">
+                                            Take in a flick at a historial theater while you still can or enjoy a special film festival if the timing is right. <br><strong>Classic theaters not to miss include:</strong>
+                                            <ul>
+                                                <li><a class="links" href="https://www.americancinematheque.com/about/theatres/egyptian-theatre/">The Egyptian
+                            Theater</a></li>
+                                                <li><a class="links" href="https://www.americancinematheque.com/">The Chinese Theater/Aero/Los
+                            Feliz</a></li>
+                                                <li><a href="https://elcapitantheatre.com/" class="links">El Capitan</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="LosAngelesRainyheadingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#LosAngelesRainycollapseThree" aria-expanded="false" aria-controls="LosAngelesRainycollapseThree">
+                      Belt it Out with Some Cool Karaoke
+                    </button>
+                                    </h2>
+                                    <div id="LosAngelesRainycollapseThree" class="accordion-collapse collapse" aria-labelledby="LosAngelesRainyheadingThree" data-bs-parent="#LosAngelesRainyaccordion">
+                                        <div class="accordion-body">
+                                            MAX Karaoke in DTLA has great songbooks with various artists and great happy hour pricing. Spending some time doing some Karaoke is a great way to spend a few hours.
+                                            <a class="links lil-flex" href="https://maxkaraokestudio.com/">Link to Max Karaoke</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="accord-closer" data-bs-toggle="collapse" data-bs-target="#LosAngelesRainy" aria-expanded="false" aria-controls="LosAngelesRainy">Click to close</a>
+                            <!--end inner accordian for rainy days-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="collapse multi-collapse" id="LosAngelesSunny">
+                        <div class="card card-body">
+                            <!--start sunny accordian inner-->
+                            <div class="accordion" id="LosAngelesSunnyaccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="LosAngelesSunnyheadingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#LosAngelesSunnycollapseOne" aria-expanded="true" aria-controls="LosAngelesSunnycollapseOne">
+                      Bask in the 'Mediterranean Sun' at The Getty Villa
+                    </button>
+                                    </h2>
+                                    <div id="LosAngelesSunnycollapseOne" class="accordion-collapse collapse show" aria-labelledby="LosAngelesSunnyheadingOne" data-bs-parent="#LosAngelesSunnyaccordion">
+                                        <div class="accordion-body">
+                                            Walk around the gardens and check out ancient antiquities near the ocean at The Getty Villa. Be sure to make <a href="https://tickets.getty.edu/Online/default.asp" class="links">reservations</a> in advance.
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="LosAngelesSunnyheadingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#LosAngelesSunnycollapseTwo" aria-expanded="false" aria-controls="LosAngelesSunnycollapseTwo">
+                      Don't Miss out on A Night Market
+                    </button>
+                                    </h2>
+                                    <div id="LosAngelesSunnycollapseTwo" class="accordion-collapse collapse" aria-labelledby="LosAngelesSunnyheadingTwo" data-bs-parent="#LosAngelesSunnyaccordion">
+                                        <div class="accordion-body">
+                                            Stop by a cool nightmarket to catch some live music and grab some bites on Thursday nights.
+                                            <a href="https://yamashirohollywood.com/nightmarket" class="lil-flex links">Yamashiro Hollywood
+                        Night Market</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="LosAngelesSunnyheadingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#LosAngelesSunnycollapseThree" aria-expanded="false" aria-controls="LosAngelesSunnycollapseThree">
+                      Hit the Beach
+                    </button>
+                                    </h2>
+                                    <div id="LosAngelesSunnycollapseThree" class="accordion-collapse collapse" aria-labelledby="LosAngelesSunnyheadingThree" data-bs-parent="#LosAngelesSunnyaccordion">
+                                        <div class="accordion-body">
+                                            For some beautiful waves, and a glorious drive head up to Malibu Beach to see the surfers hit the ocean.
+                                            <a href="https://goo.gl/maps/BCYoKgSAZSPxn6EDA" class="lil-flex links">Directions to Malibu</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="accord-closer" data-bs-toggle="collapse" data-bs-target="#LosAngelesSunny" aria-expanded="false" aria-controls="LosAngelesSunny">Click to close</a>
+
+                            <!--end sunny accordian inner-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="collapse multi-collapse" id="LosAngelesCold">
+                        <div class="card card-body">
+                            <!--Start cold accordian inner-->
+                            <div class="accordion" id="LosAngelesColdaccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="LosAngelesColdheadingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#LosAngelesColdcollapseOne" aria-expanded="true" aria-controls="LosAngelesColdcollapseOne">
+                      Warm up at a Korean Spa
+                    </button>
+                                    </h2>
+                                    <div id="LosAngelesColdcollapseOne" class="accordion-collapse collapse show" aria-labelledby="LosAngelesColdheadingOne" data-bs-parent="#LosAngelesColdaccordion">
+                                        <div class="accordion-body">
+                                            Beat the cold and warm the body at a Korean Spa. Recommended spas include:
+                                            <ul>
+                                                <li>(Women Only): <a href='https://hughspa.com/' class="links">Hugh Spa</a></li>
+                                                <li>Amenity Laden: <a class="links" href="https://wispausa.com/">WiSpa</a></li>
+                                                <li>Traditional and laid back: <a href="https://spapalacela.com/laspa/" class="links">Spa
+                            Palace</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="LosAngelesColdheadingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#LosAngelesColdcollapseTwo" aria-expanded="false" aria-controls="LosAngelesColdcollapseTwo">
+                      Eat Ramen!
+                    </button>
+                                    </h2>
+                                    <div id="LosAngelesColdcollapseTwo" class="accordion-collapse collapse" aria-labelledby="LosAngelesColdheadingTwo" data-bs-parent="#LosAngelesColdaccordion">
+                                        <div class="accordion-body">
+                                            Head to <a href="http://chibiscus.weebly.com/" class="links">Chibiscus</a> in Hollywood for some comfort-food, friendly, delicious ramen. The founders of the restaurant have a big passion for delicious ramen
+                                            and are making great things happen.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="LosAngelesColdheadingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#LosAngelesColdcollapseThree" aria-expanded="false" aria-controls="LosAngelesColdcollapseThree">
+                      Read A book!
+                    </button>
+                                    </h2>
+                                    <div id="LosAngelesColdcollapseThree" class="accordion-collapse collapse" aria-labelledby="LosAngelesColdheadingThree" data-bs-parent="#LosAngelesColdaccordion">
+                                        <div class="accordion-body">
+                                            Check out the large selection of books at the <a href="https://www.lapl.org/branches/central-library" class="links">Central Library</a> or feel something more eclectic then stop by the <a href="https://www.lastbookstorela.com/"
+                                                class="links">Last Bookstore</a>.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="accord-closer" data-bs-toggle="collapse" data-bs-target="#LosAngelesCold" aria-expanded="false" aria-controls="LosAngelesCold">Click to close</a>
+                            <!--end cold accordian inner-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end first hidden text area-->
+        </div>
+    </div>
+    <footer class="container-fluid colorbg fixed-bottom">
+        <nav>
+            <ul class="footflex">
+                <li class="footflexitem">
+                    <a href="#" class="smlink links" id="alertFooter">About</a>
+                </li>
+                <li class="footflexitem">&#169; 2022</li>
+                <li class="footflexitem"><a href="https://github.com/mac-kenzie-lee">Github: mac-kenzie-lee</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <!--the following line is the script for bootstrap's js and popper-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <!--below script element links in my custom javascript!-->
+    <script src="customJs.js">
+    </script>
+</body>
+
+</html>

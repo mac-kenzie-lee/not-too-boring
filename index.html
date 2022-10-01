@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <!--added in some meta tags given by bootstrap documentation-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--google font for logo-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!--google font for h1 main tag-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+    <!--this next line is the bootstrap link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link href="styles.css" rel="stylesheet">
+    <title>Not Too Boring</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav>
+            <ul class="nav nav-pills navitems navbar nav-cus">
+                <li class="navlink nav-item">
+                    <a class="nav-link active nav-cus-text" aria-current="page" href="index.html">home
+          </a>
+                </li>
+                <li class="logo nav-cus-text">
+                    Not Too Boring
+                </li>
+                <li class="nav-item dropstart ">
+                    <a id="dLabel" class="nav-link dropdown-toggle links nav-cus-text" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+            Cities
+          </a>
+                    <ul class="dropdown-menu dd-cus" aria-labelledby="dLabel">
+                        <li class="navlink">
+                            <a class="dropdown-item dd-l" href="oc.html">
+                Orange County
+              </a>
+                        </li>
+                        <li class="navlink">
+                            <a class="dropdown-item dd-l" href="sf.html">
+                San Francisco
+              </a>
+                        </li>
+                        <li class="navlink">
+                            <a class="dropdown-item dd-l" href="la.html">
+                Los Angeles</a>
+                        </li>
+                        <li class="navlink"><a class="dropdown-item dd-l" href="se.html">Seoul</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="container-fluid main">
+            <h1 class="text-center herotext"><em>Exciting ideas for a day off</em></h1>
+            <br>
+            <p class="text-center">Stuck in a new city and not sure about what is really good to see and do? Not too boring aims to help provide some suggestions and give insight to cool things to do based on many situations.</p>
+
+
+            <!--start slider-->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <br>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="se.html"><img src="images/korea/20220422_082737.jpg" class="d-block w-100" alt="Seoul"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="la.html"><img src="images/losangeles/20211107_164538.jpg" class="d-block w-100" alt="Los Angeles"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="oc.html"><img src="images/oc/20210903_142755.jpg" class="d-block w-100" alt="Orange County"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="sf.html"><img src="images/sf/20220212_145308.jpg" class="d-block w-100" alt="San Francisco"></a>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+            </div>
+            <!--end slider-->
+            <br>
+            <br>
+            <p class="text-center"> <strong>Currently featuring:</strong> <em>Seoul, Orange County, San Francisco and Los
+          Angeles.</em></p>
+
+
+
+        </div>
+    </div>
+    <footer class="container-fluid colorbg fixed-bottom">
+        <nav>
+            <ul class="footflex">
+                <li class="footflexitem"> <a href="#" class="smlink links" id="alertFooter">About</a></li>
+                <li class="footflexitem">&#169; 2022</li>
+                <li class="footflexitem"><a href="https://github.com/mac-kenzie-lee">Github: mac-kenzie-lee</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <!--the following line is the script for bootstrap's js and popper-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <!--below script element links in my custom javascript!-->
+    <script src="customJs.js">
+    </script>
+</body>
+
+</html>
